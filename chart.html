@@ -17,6 +17,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
+  <h2>Average Hourly Rate for City of Seattle Employees</h2>
   <div id="vis"></div>
   <script>
     (function(vegaEmbed) {
@@ -37,5 +38,14 @@
     })(vegaEmbed);
 
   </script>
+  <p>
+	This graph is designed to compare the average hourly rate and age of City of Seattle employees based on their race and enthnicity. 
+	I used position on the X axis to encode age as a quantitative variable. I also encoded average hourly rate using position on the 
+	Y axis because it is also a quantitative variable. This means users can easily see how the line change for average hourly rate as 
+	the age increases looking at the graph from left to right. I also encoded race/ethnicity using color because it is a nominal 
+	variable, so that the different races or ethnicities can be compared with each other. Now, with all the race/ethnicity values 
+	being displayed, this is difficult to read. I added an interaction, a drop down, for the user to select which race/ethnicity 
+	line they wanted to highlight. This makes it much easier for the user to compare the individual race/ethnicity with the rest of the group.
+  </p>
 </body>
 </html>
